@@ -1,11 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-body {
-    font-family: Roboto, sans-serif;
+/*reset*/
+*{
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
 header {
@@ -13,6 +13,45 @@ header {
     color: white;
     padding: 1rem;
     text-align: center;
+}
+
+header img {
+    width: 10%;
+    object-fit: contain;
+}
+
+header section h1{
+    font-size: 200%;
+}
+
+header nav{
+    background-color: white;
+    border-top: solid black 6px;
+    border-bottom: solid black 6px;
+}
+
+header nav div ul{
+    font-size: 250%;  
+    width: 100%;
+}
+
+
+/*estilos del MAIN*/
+main{
+    font-family: Roboto, sans-serif;
+    background-color: #FFFFFF;
+    font-size: 20px;
+}
+
+main h2{
+    font-size: 50px;
+    margin: 20px;
+}
+
+/*estios del inicio*/
+main.inicio{
+    display: flex;
+    flex-direction: column;   
 }
 
 nav ul {
@@ -39,7 +78,12 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
+
+footer ul li.instagram a img{
+    width: 2%;
+    object-fit: contain;
+}
+
